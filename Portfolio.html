@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #ecf0f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+        
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill-item {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .project {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kotte Leela Vaishnavi</h1>
+            <p>UG CSE Student | AIML Specialist | Web Developer | Intern at CodSoft</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Internships & Workshops</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate Artificial Intelligence enthusiast currently pursuing a B.Tech in Computer Science Engineering with a specialization in AIML. With a strong foundation in programming languages such as C, C++, Java, Python, HTML, and CSS, I have honed my skills through numerous internships and workshops. My experience spans diverse domains including Cyber Security, Web Development, Machine Learning, Artificial Intelligence, and Python programming with Pandas. I thrive on leveraging these skills to innovate and solve complex problems, driven by a deep curiosity and a commitment to continuous learning in the ever-evolving field of technology.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">HTML</span>
+                <span class="skill-item">CSS</span>
+                <span class="skill-item">Responsive Web Design</span>
+                <span class="skill-item">Programming Languages: Java, C++, C, Python</span>
+                <span class="skill-item">Git Version Control</span>
+                <span class="skill-item">Ethical Hacking</span>
+                <span class="skill-item">Communication</span>
+            </div>
+        </section>
+
+        <section id="internships">
+            <h2>Internships & Workshops </h2>
+            <div class="internship">
+                <h3>CodSoft : Web Development </h3>
+                <p>During my CodSoft internship in web development, I sharpened my skills in HTML and CSS, creating dynamic and responsive web pages. This hands-on experience in web development has been invaluable in enhancing my coding proficiency and design capabilities.</p>
+                <br>
+                </div>
+            <div class="internship">
+                <h3>Octanet Services Pvt Ltd. : Python Development</h3>
+                <p>During my one-month internship at Octanet Services Pvt. Ltd., I honed my Python development skills, mastering coding, debugging, and efficient programming practices. This experience significantly boosted my proficiency in Python.</p>
+                <br>
+                </div>
+            <div class="internship">
+                <h3>Prodigy InfoTech : Machine Learning</h3>
+                <p>During my one-month internship at Prodigy Infotech, I delved into machine learning, enhancing my skills in model building, data analysis, and algorithm optimization. This experience enriched my understanding of machine learning principles and practices.</p>
+<br>            
+</div>
+            <div class="internship">
+                <h3>TechnoHacks EduTech : Cybersecurity and Ethical Hacking</h3>
+                <p>During my internship at TechnoHacks Edutec, I gained hands-on experience in cybersecurity and ethical hacking, learning to identify vulnerabilities, secure systems, and implement protective measures. This internship significantly enhanced my skills in the cybersecurity domain.</p>
+            </div
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>Designed and developed a responsive personal portfolio website using HTML and CSS. This project showcases my ability to create a clean, professional web presence.</p>
+            </div>
+            <div class="project">
+                <h3>Loading Page Design</h3>
+                <p>Created an engaging loading page using HTML and CSS, demonstrating my skills in creating interactive user interfaces.</p>
+            </div>
+            <div class="project">
+                <h3>Developing a Web Page to Showcase Health and Hygiene Survey Results</h3>
+                <p>Created a webpage for my community service project in health and hygiene, showcasing the surveys conducted, including all questions and findings. This project aims to highlight community health insights and promote better hygiene practices.</p>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>To learn more about my experience and qualifications, please download my resume:</p>
+            <a href="C:\Users\DELL\Desktop\resume.pdf" download class="btn">Download Resume (PDF)</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: leelavyshnavi@gmail.com</p>
+            <p>Phone: 12-3456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 K.L. Vaishnavi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
